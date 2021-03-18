@@ -16,12 +16,10 @@ Might not be exactly next-gen soft, but it's somewhat useful.
 * wikipedia
 * optional proxies with searches
 * clear search history :smirk:
-
 **Files:**
 * Create and Delete
 * Move
 * Rename
-
 **One-Offs:**
 * email reminders
 * check IP address
