@@ -10,9 +10,19 @@ The additions I have made allow you to open apps with voice commands, some file 
 But, I know everyone likes to put their files in different places, so I include examples and comments on how to do the same for any other file. 
 Might not be exactly next-gen soft, but it's somewhat useful.
 
-
-
-
 ## Features
 **Search:**
-* Google
+* automatic search and audible output
+* wikipedia
+* optional proxies with searches
+* clear search history :smirk:
+
+**Files:**
+* Create and Delete
+* Move
+* Rename
+
+**One-Offs:**
+* email reminders
+* check IP address
+* 
