@@ -11,15 +11,18 @@ But, I know everyone likes to put their files in different places, so I include 
 Might not be exactly next-gen soft, but it's somewhat useful.
 
 ## Features
+
 **Search:**
 * automatic search and audible output
 * wikipedia
 * optional proxies with searches
 * clear search history :smirk:
+
 **Files:**
 * Create and Delete
 * Move
 * Rename
+
 **One-Offs:**
 * email reminders
 * check IP address
