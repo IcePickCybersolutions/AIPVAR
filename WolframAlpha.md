@@ -3,6 +3,7 @@
 
 To begin, what this does is uses an application programming interface to return answers to complex questions using the machine intelligent WolframAlpha platform. 
 WolframAlpha itself is an AI system built to answer questions in various areas, almost exclusively sciencey stuff tho. 
+
 In the creators' own words:
 > Compute expert-level answers using Wolfram’s breakthrough 
 > algorithms, knowledgebase and AI technology.
