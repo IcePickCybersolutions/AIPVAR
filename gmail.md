@@ -1,5 +1,5 @@
 # Using Gmail to Send Reminders
-### Let Rasputin tell you to get ur ~~$%&#~~ Together
+### Let Rasputin tell you to get your ~~$%&#~~ Together
 
 I used [this tutorial](https://realpython.com/python-send-email/) to learn how to do this btw.
 
