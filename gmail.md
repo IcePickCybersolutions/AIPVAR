@@ -16,3 +16,6 @@ But don't worry, the code is all handled, all you've gotta do is put together th
 5. Terminal: "python quickstart.py" (will run a python script form google to open a webpage for authentication)
 6. If the webpage looks legit, accept to authorize
 7. Onto the next step!
+
+### Setting up a Secure SMTP Connection with Gmail
+1. 
