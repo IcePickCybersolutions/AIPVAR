@@ -1,7 +1,7 @@
 # Using Gmail to Send Reminders
 ### Let Rasputin tell you to get ur ~~$%&#~~ Together
 
-I used [this tutorial](https://realpython.com/python-send-email/) to learn how to do this.
+I used [this tutorial](https://realpython.com/python-send-email/) to learn how to do this btw.
 
 This can be a little touchy security-wise if you don't go about it safely. 
 So, here is how you can use the gmail OAuth2 authrization framework to keep yourself safe and still get Rasputin's emails. 
