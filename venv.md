@@ -12,12 +12,12 @@ Anyway, here it is:
 * A somewhat-well named folder
 * An internet connection
 
-### On Mac:
+### On Mac/Linux/Windows:
 (anything that I type in quotes is somehting to type, don't include the quotes tho)
 
 (if it's italicized it's a placeholder that you should replace with your own values)
-1. In terminal "pip install virtualenv" (installs the virtualenv tool systemwide)
+1. In terminal/cmd "pip install virtualenv" (installs the virtualenv tool systemwide)
 3. Create or navigate to the folder where Rasputin will live
 4. Terminal: "python3 -m venv *name of your virtual environment*" (creates the virtual environment)
 5. Terminal: "source env/bin/activate" (activates the virtualenv and allows you to affect only it with your commands)
-6. Terminal: "
+6. Terminal: "pip install 
