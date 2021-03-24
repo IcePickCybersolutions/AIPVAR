@@ -18,4 +18,11 @@ But don't worry, the code is all handled, all you've gotta do is put together th
 7. Onto the next step!
 
 ### Setting up a Secure SMTP Connection with Gmail
-1. 
+1. Search through the rasputin.py code to find any strings saying "your email goes here"
+2. Replace the placeholder text with your email
+3. Onward!
+
+### Sending the Emails
+1. Locate the code under the comment "This piece is the email's content"
+2. Change up the content of the email if you feel so inclined
+3. Ask Rasutin to remind you, then upon the prompt, remind yourself away.
