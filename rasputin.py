@@ -251,14 +251,17 @@ Here are some general commands to do stuff:
             # do change this
             sender_email = "your email goes here"
             receiver_email = "whoever you want the reminders to go to"
-            reminder =
+            reminder = """\
+            Subject: 
+
+            """
 
             # this code block connects to the server, authenticates, and sends your reminder
             context = ssl.create_default_context()
             with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
                 server.login("your email goes here", password)
                 server.sendmail(sender_email, receiver_email, reminder)
-                
+
 		# what i try to ask siri to do at least once a day, don't worry i'll keep trying
         elif "log off" or "sign out" or "power off" or "shut down" in statement:
             speak("Ok, your pc will log of in 10 seconds, exit all applications.")
