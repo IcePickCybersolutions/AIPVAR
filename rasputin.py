@@ -256,6 +256,19 @@ Here are some general commands to do stuff:
             with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
                 server.login("your email goes here", password)
                 server.sendmail(sender_email, receiver_email, reminder)
+                speak('What do you want me to remind you about?')
+                reminder = takeCommand()
+                message = """ \
+                Subject: {reminder}
+
+                Someone told me to remind you:
+                {reminder}
+
+                Anyway, have a great day!
+
+                Legitimately,
+                Rasputin
+                """
 
 		# what i try to ask siri to do at least once a day, don't worry i'll keep trying
         elif "log off" or "sign out" or "power off" or "shut down" in statement:
