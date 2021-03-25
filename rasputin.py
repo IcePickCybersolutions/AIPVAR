@@ -255,9 +255,12 @@ Here are some general commands to do stuff:
             context = ssl.create_default_context()
             with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
                 server.login("your email goes here", password)
+                # this just pulls the variables above and uses them to send the email
                 server.sendmail(sender_email, receiver_email, reminder)
+                # the prompt that asks you what your reminder is
                 speak('What do you want me to remind you about?')
                 reminder = takeCommand()
+                # here is what Rasputin's gonna email you, feel free to add him to ur contacts
                 message = """ \
                 Subject: {reminder}
 
