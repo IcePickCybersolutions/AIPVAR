@@ -20,6 +20,6 @@ Anyway, here it is:
 3. Create or navigate to the folder where Rasputin will live
 4. Terminal: "python3 -m venv *name of your virtual environment*" (creates the virtual environment)
 5. Terminal: "source env/bin/activate" (activates the virtualenv and allows you to affect only it with your commands)
-6. Terminal: "pip install *the following packages*" [SpeechRecognition](https://pypi.org/project/SpeechRecognition/), [pyttsx3](https://pypi.org/project/pyttsx3/), [wikipedia](https://pypi.org/project/wikipedia/), [wolframalpha](https://pypi.org/project/wolframalpha/), [requests](https://pypi.org/project/requests/)
+6. Terminal: "pip install *the following packages*" [SpeechRecognition](https://pypi.org/project/SpeechRecognition/), [pyttsx3](https://pypi.org/project/pyttsx3/), [wikipedia](https://pypi.org/project/wikipedia/), [wolframalpha](https://pypi.org/project/wolframalpha/), [requests](https://pypi.org/project/requests/), [ssl](https://pypi.org/project/ssl/), smtplib
 7. Terminal: "deactivate" (you're no longer in the virtual environment, type source env/bin/activate to reopen it and add more stuff)
 8. Thats that, if everything worked right, you should now have a working voice assistant!
