@@ -251,10 +251,17 @@ Here are some general commands to do stuff:
             # do change this
             sender_email = "your email goes here"
             receiver_email = "whoever you want the reminders to go to"
+<<<<<<< HEAD
             reminder = """\
             Subject: 
 
             """
+=======
+	    speak('What do you want me to remind you about?')
+	    reminder = takeCommand()
+            message = " \
+	    Subject: {reminder}
+>>>>>>> 4e0c5f5e8d71b065bdb29863dd476c79eccd7c56
 
             # this code block connects to the server, authenticates, and sends your reminder
             context = ssl.create_default_context()
