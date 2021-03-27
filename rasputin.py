@@ -238,8 +238,8 @@ Here are some general commands to do stuff:
             webbrowser.open_new_tab(statement)
             time.sleep(5)
 
-		#this uses the WolframAlpha API to answer questions that you have, check out the WolframAlpha file in my repo to learn about this
-		#To use this best say something along the lines of "I want to ask something", and upon the prompt, ask away
+		# this uses the WolframAlpha API to answer questions that you have, check out the WolframAlpha file in my repo to learn about this
+		# To use this best say something along the lines of "I want to ask something", and upon the prompt, ask away
         elif "ask" in statement:
             speak('What question do you have for me?')
             question = takeCommand()
@@ -290,6 +290,10 @@ Here are some general commands to do stuff:
         ejects a thumdrive, but you have to specfy which one when given choices.
         uses the pyautogui to automate this task,
         not an absolutely perfect solution but it's windows so cmd is far from perfect.
+        please note that this dismounts drives so you'll likely
+        have to go into disk management when using the drive again,
+        right-click it, hit change drive letter and path, then hit okay, it'll work just like normal tho.
+        if you just need to get a disk tf outta there, this is pretty useful.
         '''
         elif "eject disk" in statement:
             pyautogui.keyDown('winright')
@@ -299,9 +303,14 @@ Here are some general commands to do stuff:
             pyauotgui.press('enter')
             pyautogui.press('left')
             pyauotgui.press('enter')
+            pyautogui.write('list volume')
+            speak("What volume number do you wish to eject?")
+            usbnumber = takeCommand()
+            pyautogui.write('select volume {usbnumber}')
+            pyautogui.write('remove all dismount')
+            speak("Volume {usbnumber} has been ejected, all clear to remove device.")
 
-
-		# what i try to ask siri to do at least once a day, don't worry i'll keep trying
+		# what i try to ask siri to do at least once a day, don't worry i'll keep trying :)
         elif "log off" or "sign out" or "power off" or "shut down" in statement:
             speak("Ok, your pc will log of in 10 seconds, exit all applications.")
             subprocess.call(["shutdown", "/l"])
