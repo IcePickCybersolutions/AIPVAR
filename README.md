@@ -14,9 +14,8 @@ Might not be exactly next-gen soft, but it's somewhat useful.
 * automatic search and audible output
 * wikipedia
 * search for sciency answers with [wolframalpha](https://www.wolframalpha.com)
-* optional proxies with searches
+* activate proxies
 * clear search history :smirk:
 * email reminders
-* check IP address
 * open applications
 * turn off computer
