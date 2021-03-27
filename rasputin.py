@@ -292,10 +292,14 @@ Here are some general commands to do stuff:
         not an absolutely perfect solution but it's windows so cmd is far from perfect.
         '''
         elif "eject disk" in statement:
-            os.system('cmd /k diskpart')
-            for line in run_command(command):
-                print(line)
-                speak("Which drive number would you like eject?")
+            pyautogui.keyDown('winright')
+            pyautogui.press('r')
+            pyautogui.keyUp('winright')
+            pyautogui.write('diskpart')
+            pyauotgui.press('enter')
+            pyautogui.press('left')
+            pyauotgui.press('enter')
+
 
 		# what i try to ask siri to do at least once a day, don't worry i'll keep trying
         elif "log off" or "sign out" or "power off" or "shut down" in statement:
