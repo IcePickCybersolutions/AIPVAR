@@ -66,15 +66,6 @@ def takeCommand():
             speak("Repeat instructions")
         return "None"
     return statement
-
-
-'''
-For cmd-related commands that require the user to interact with the output.
-All this does is allow for Rasputin to see what the cmd says and use then relay that to the user.
-'''
-def readoutCommand(command):
-    p = subprocess.Popen(command, stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
-    return iter(p.stdout.readline, b")
 # and thats the end of our functions
 
 # when the machine starts up it should introduce itself and greet you
