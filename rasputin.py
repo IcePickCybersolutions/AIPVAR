@@ -111,6 +111,19 @@ Here are some general commands to do stuff:
             print(results)
             speak(results)
 
+        elif 'activate proxies' in statement:
+            pyautogui.keyDown('winright')
+            pyautogui.press('r')
+            pyautogui.keyUp('winright')
+            pyautogui.write('cmd')
+            pyautogui.press('enter')
+            pyautogui.press('left')
+            pyautogui.press('enter')
+            pyautogui.write(r'cd C:"\\"Windows"\"SysWOW64')
+            pyautogui.press('enter')
+            pyautogui.write('netsh winhttp set proxy ')
+            speak("Proxies active.")
+
         elif 'open youtube' in statement:
             webbrowser.open_new_tab("https://www.youtube.com")
             speak("youtube is now open")
@@ -295,10 +308,13 @@ Here are some general commands to do stuff:
             pyautogui.press('left')
             pyauotgui.press('enter')
             pyautogui.write('list volume')
+            pyauotgui.press('enter')
             speak("What volume number do you wish to eject?")
             usbnumber = takeCommand()
             pyautogui.write('select volume {usbnumber}')
+            pyautogui.press('enter')
             pyautogui.write('remove all dismount')
+            pyautogui.press('enter')
             speak("Volume {usbnumber} has been ejected, all clear to remove device.")
 
 		# what i try to ask siri to do at least once a day, don't worry i'll keep trying :)
