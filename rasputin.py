@@ -111,6 +111,7 @@ Here are some general commands to do stuff:
             print(results)
             speak(results)
 
+        # activates one proxy server connection to better hide you on the internet
         elif 'activate proxies' in statement:
             pyautogui.keyDown('winright')
             pyautogui.press('r')
@@ -121,7 +122,8 @@ Here are some general commands to do stuff:
             pyautogui.press('enter')
             pyautogui.write(r'cd C:"\\"Windows"\"SysWOW64')
             pyautogui.press('enter')
-            pyautogui.write('netsh winhttp set proxy ')
+            # replace the variables with values like 131.72.69.14:8080, just google "free proxy list for options" spys.one is a good site for finding these
+            pyautogui.write('netsh winhttp set proxy proxyServerIP:proxyServerPort')
             speak("Proxies active.")
 
         elif 'open youtube' in statement:
