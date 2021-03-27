@@ -15,7 +15,6 @@ Might not be exactly next-gen soft, but it's somewhat useful.
 * wikipedia
 * search for sciency answers with [wolframalpha](https://www.wolframalpha.com)
 * activate proxies
-* clear search history :smirk:
 * email reminders
 * open applications
 * turn off computer
