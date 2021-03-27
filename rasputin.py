@@ -22,16 +22,19 @@ import json
 import requests
 import smtplib
 import ssl
+import pyautogui
 
 # starting up the speech recognition engine (sapi5) which only works on windows
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')
 engine.setProperty('voice','voices[0].id')
 
+
 # function for how the engine should speak
 def speak(text):
     engine.say(text)
     engine.runAndWait()
+
 
 # function for basic pleasantries
 def wishMe():
@@ -45,6 +48,7 @@ def wishMe():
     else:
         speak("Hello, Good Evening")
         print("Hello, Good Evening")
+
 
 # this takes input from speech and responds to it with actions defined later
 def takeCommand():
@@ -62,6 +66,15 @@ def takeCommand():
             speak("Repeat instructions")
         return "None"
     return statement
+
+
+'''
+For cmd-related commands that require the user to interact with the output.
+All this does is allow for Rasputin to see what the cmd says and use then relay that to the user.
+'''
+def readoutCommand(command):
+    p = subprocess.Popen(command, stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+    return iter(p.stdout.readline, b")
 # and thats the end of our functions
 
 # when the machine starts up it should introduce itself and greet you
@@ -272,6 +285,17 @@ Here are some general commands to do stuff:
                 Legitimately,
                 Rasputin
                 """
+
+        '''
+        ejects a thumdrive, but you have to specfy which one when given choices.
+        uses the pyautogui to automate this task,
+        not an absolutely perfect solution but it's windows so cmd is far from perfect.
+        '''
+        elif "eject disk" in statement:
+            os.system('cmd /k diskpart')
+            for line in run_command(command):
+                print(line)
+                speak("Which drive number would you like eject?")
 
 		# what i try to ask siri to do at least once a day, don't worry i'll keep trying
         elif "log off" or "sign out" or "power off" or "shut down" in statement:
