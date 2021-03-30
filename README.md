@@ -1,7 +1,7 @@
 # AIPVAR
 Artificially Intelligent Personal Voice Assistant who goes by the name Rasputin
 
-I like using Siri, Cortana, any voice assistant is a cool feature for me. 
+I like using Siri, Cortana, Google home, etc.; any voice assistant is a cool feature for me. 
 But I don't love the fact that most of the time they're mostly useless, apart from telling you what time it is or adding an alarm, there isn't much that they help with.
 So, I threw together a voice assistant built by @mmirthula02 from [their repo.](https://github.com/mmirthula02/AI-Personal-Voice-assistant-using-Python)
 I'm a big believer in not reinventing the wheel, so if someone else made something similar to what I need I'll build off of that.
