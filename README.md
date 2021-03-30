@@ -21,7 +21,7 @@ Might not be exactly next-gen soft, but it's somewhat useful.
 * turn off computer
 
 ## Get Started
-1. Head to venv.md and follow the instructions
-2. Download rasputin.py and put in in the same folder as your newly-created virtual enviornment
-3. Read through the code and reference the respective md files to finish setup
-4. Run the code and ask Rasputin some questions
+1. head to venv.md and follow the instructions
+2. download rasputin.py and put in in the same folder as your newly-created virtual enviornment
+3. read through the code and reference the respective md files to finish setup
+4. run the code and ask Rasputin some questions
